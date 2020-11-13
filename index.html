@@ -361,11 +361,17 @@
           </ul>
         </div>
 
-        <form action="" method="POST" class="subscribe-form">
+        <form action="" method="POST">
           <label class="footer-titles" for="subscribe">Подпишитесь на рассылку</label>
-          <div class=subscribe-input-button>
+          <div class="subscribe-input-button">
             <input class="email-input" type="email" name="email" placeholder="E-mail" id="subscribe" />
-            <button class="subscribe-button" type="submit"><span class="subscribe-button-text">Подписаться</span></button>
+            <button class="subscribe-button" type="submit">
+                Подписаться
+                <!--<span class="subscribe-button-text">Подписаться</span>-->
+                <svg class="subscribe-button-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </button>
           </div>
         </form>
       </div>
