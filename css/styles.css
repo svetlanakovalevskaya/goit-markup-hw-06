@@ -526,11 +526,15 @@ img {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button-icon {
   margin-left: 10px;
   fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-page {
@@ -597,6 +601,7 @@ img {
 .project-thumb {
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 .project-thumb::before {
