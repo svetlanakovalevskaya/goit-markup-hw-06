@@ -427,6 +427,7 @@ img {
 
 #contacts {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -538,8 +539,15 @@ img {
   color: #ffffff;
 }
 
-.subscribe-button-text::after {
-  background-image: url(../images/symbol-defs.svg#icon-send);
+.subscribe-button-text {
+  position: relative;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url("../images/icon-send.svg");
+  fill: #ffffff;
 }
 
 .portfolio-page {
@@ -803,4 +811,9 @@ img {
 .project-link:focus .project-description {
   transform: translateY(0px);
   opacity: 1;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #ffffff;
 }
