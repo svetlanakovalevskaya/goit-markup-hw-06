@@ -367,7 +367,6 @@
             <input class="email-input" type="email" name="email" placeholder="E-mail" id="subscribe" />
             <button class="subscribe-button" type="submit">
                 Подписаться
-                <!--<span class="subscribe-button-text">Подписаться</span>-->
                 <svg class="subscribe-button-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
                 </svg>
@@ -384,6 +383,33 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="contact-form" action="" method="get">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="inputs-container">
+            <label class="label-title" for="name">Имя</label>
+            <input class="contact-input" type="text" name="name" id="name" />
+            <label class="label-title" for="tel">Телефон</label>
+            <input class="contact-input" type="tel" name="tel" id="tel" />
+            <label class="label-title" for="email">Почта</label>
+            <input class="contact-input" type="email" name="email" id="email" />
+            <label class="label-title" for="textarea">Комментарий</label>
+            <textarea class="comment-area"
+              name="comment"
+              rows="5"
+              placeholder="Введите текст"
+              id="textarea">
+            </textarea>
+          </div>
+          <div class="checkbox-container">
+            <input class="checkbox" type="checkbox" name="message" id="checkbox" />
+            <label for="checkbox">
+            <span class="checkbox-subscribe">Соглашаюсь с рассылкой и принимаю</span>
+            <a class="checkbox-link" href="">Условия договора</a>
+            </label>
+          </div>
+          <button class="submit-contacts-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
