@@ -815,14 +815,6 @@ img {
   border-radius: 2px;
 }
 
-.checkbox:checked + .checkbox-icon {
-  background-color: #2196f3;
-  background-image: url("../images/icon-check.svg");
-  background-size: contain;
-  background-origin: border-box;
-  border-color: #2196f3;
-}
-
 .checkbox-subscribe {
   font-weight: normal;
   font-size: 14px;
@@ -952,4 +944,32 @@ img {
 .modal-close-button:hover .modal-close-icon,
 .modal-close-button:focus .modal-close-icon {
   fill: #2196f3;
+}
+
+.contact-input:focus {
+  outline-color: #2196f3;
+}
+
+.contact-input:focus + .contact-input-icon {
+  fill: #2196f3;
+}
+
+.comment-area:focus {
+  outline-color: #2196f3;
+}
+
+.checkbox:focus + .checkbox-icon {
+  border-color: #2196f3;
+}
+
+.modal-close-button:focus {
+  border-color: #2f303a;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: #2196f3;
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #2196f3;
 }
