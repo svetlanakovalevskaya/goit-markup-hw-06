@@ -703,29 +703,34 @@ img {
   transform: translate(-50%, -50%) scale(0.6);
 }
 
-.modal-close {
+.modal-close-button {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
+  padding: 0px;
+  margin: 0px;
   background-color: #ffffff;
-  border: 0px;
   outline-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
 }
 
 .modal-close-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
 }
 
 .contact-form {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 2px;
   font-family: Roboto, sans-serif;
   font-style: normal;
 }
@@ -743,7 +748,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-
 }
 
 .label-title {
@@ -756,6 +760,10 @@ img {
   color: #757575;
 }
 
+.contact-input-container {
+  position: relative;
+}
+
 .contact-input {
   display: block;
   margin-bottom: 10px;
@@ -763,6 +771,16 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.contact-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0%, -50%);
+  width: 15px;
+  height: 12px;
+  fill: #212121;
 }
 
 .comment-area {
@@ -775,6 +793,7 @@ img {
 }
 
 .checkbox-container {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -782,10 +801,18 @@ img {
 }
 
 .checkbox {
+  position: absolute;
   margin-right: 8px;
-  color: #212121;
   width: 16px;
   height: 15px;
+  opacity: 0;
+}
+
+.checkbox-icon {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(./images/symbol-defs.svg#icon-checkbox);
 }
 
 .checkbox-subscribe {
@@ -801,7 +828,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: #2196f3;
   text-decoration: underline;
 }
 
@@ -815,8 +842,8 @@ img {
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
+  color: #ffffff;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
   border-radius: 4px;
@@ -911,5 +938,10 @@ img {
 
 .subscribe-button:hover .subscribe-button-icon,
 .subscribe-button:focus .subscribe-button-icon {
+  fill: #2196f3;
+}
+
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
   fill: #2196f3;
 }

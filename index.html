@@ -378,9 +378,9 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
+        <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon">
-            <use href="./images/symbol-defs.svg#icon-close"></use>
+            <use href="./images/symbol-defs.svg#icon-close-x"></use>
           </svg>
         </button>
 
@@ -388,11 +388,26 @@
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div class="inputs-container">
             <label class="label-title" for="name">Имя</label>
-            <input class="contact-input" type="text" name="name" id="name" />
+            <div class="contact-input-container">
+              <input class="contact-input" type="text" name="name" id="name" />
+              <svg class="contact-input-icon">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
             <label class="label-title" for="tel">Телефон</label>
-            <input class="contact-input" type="tel" name="tel" id="tel" />
+            <div class="contact-input-container">
+              <input class="contact-input" type="tel" name="tel" id="tel" />
+              <svg class="contact-input-icon">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </div>
             <label class="label-title" for="email">Почта</label>
-            <input class="contact-input" type="email" name="email" id="email" />
+            <div class="contact-input-container">
+              <input class="contact-input" type="email" name="email" id="email" />
+              <svg class="contact-input-icon">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </div>
             <label class="label-title" for="textarea">Комментарий</label>
             <textarea class="comment-area"
               name="comment"
@@ -401,13 +416,15 @@
               id="textarea">
             </textarea>
           </div>
-          <div class="checkbox-container">
-            <input class="checkbox" type="checkbox" name="message" id="checkbox" />
-            <label for="checkbox">
-            <span class="checkbox-subscribe">Соглашаюсь с рассылкой и принимаю</span>
-            <a class="checkbox-link" href="">Условия договора</a>
-            </label>
-          </div>
+
+          <label class="checkbox-container">
+              <input class="checkbox" type="checkbox" name="message" />
+              <span class="checkbox-icon"></span>
+              <span class="checkbox-subscribe">Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox-link" href="">Условия договора</a>
+              </span>
+          </label>
+
           <button class="submit-contacts-button" type="submit">Отправить</button>
         </form>
       </div>
