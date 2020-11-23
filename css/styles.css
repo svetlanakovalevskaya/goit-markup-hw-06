@@ -344,7 +344,6 @@ img {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
-
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -726,6 +725,10 @@ img {
   transform: translate(-50%, -50%);
   width: 11px;
   height: 11px;
+}
+
+.contact-form-container {
+  margin-left: auto;
 }
 
 .contact-form {
